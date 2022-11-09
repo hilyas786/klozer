@@ -3,8 +3,7 @@ import ThemeChanger from './DarkSwitch';
 import { Disclosure } from '@headlessui/react';
 import React from 'react';
 import Image from 'next/image';
-import klozerLogo from '../public/img/klozerLogo.png';
-
+import klozerLogo from '../public/img/klozerlogo.png';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import {
@@ -216,15 +215,15 @@ const callsToAction = [
 //     icon: ShieldCheckIcon,
 //   },
 // ];
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  {
-    id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
-    href: '#',
-  },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
-];
+// const recentPosts = [
+//   { id: 1, name: 'Boost your conversion rate', href: '#' },
+//   {
+//     id: 2,
+//     name: 'How to use search engine optimization to drive traffic to your site',
+//     href: '#',
+//   },
+//   { id: 3, name: 'Improve your customer experience', href: '#' },
+// ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
