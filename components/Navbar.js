@@ -21,6 +21,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { Button } from './Button';
 
 function BusinessIcon() {
   return (
@@ -231,14 +232,14 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <div className='relative bg-gray-50'>
-      <Popover className='relative bg-white shadow'>
+    <div className=' bg-gray-200 sticky top-0 z-50 '>
+      <Popover className='sticky top-0 z-50 bg-gray-100 '>
         <div className='mx-auto max-w-7xl px-4 sm:px-6'>
           <div className='flex items-center justify-between py-6 md:justify-start md:space-x-10'>
             <div className='flex justify-start lg:w-0 lg:flex-1'>
               <Link href='/'>
                 <span className='sr-only'>Klozer</span>
-                <Image src={klozerLogo} alt='/' width={150} height={150} />
+                <Image src={klozerLogo} alt='/' width={170} height={170} />
               </Link>
             </div>
             <div className='-my-2 -mr-2 md:hidden'>
@@ -253,8 +254,8 @@ export default function Navbar() {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'text-gray-500',
-                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                        open ? 'text-indigo-600' : 'text-gray-900',
+                        'group inline-flex items-center  bg-gray-100 text-base font-medium hover:text-gray-900 '
                       )}
                     >
                       <span>Services</span>
@@ -323,69 +324,23 @@ export default function Navbar() {
                 )}
               </Popover>
 
-              <a
-                href='#'
-                className='text-base font-medium text-gray-500 hover:text-gray-900'
+              <Link
+                href='/aboutus'
+                classname='text-base font-medium text-gray-500 hover:text-gray-900'
               >
                 About Us
-              </a>
-              <a
-                href='#'
-                className='text-base font-medium text-gray-500 hover:text-gray-900'
+              </Link>
+
+              <Link
+                href='/careers'
+                classname='text-base font-medium text-gray-500 hover:text-gray-900'
               >
                 Careers
-              </a>
+              </Link>
             </Popover.Group>
             <div className='hidden items-center justify-end md:flex md:flex-1 lg:w-0'>
-              {/* <a
-                href='#'
-                className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'
-              >
-                Sign in
-              </a> */}
-
-              {/* Button */}
-              <a
-                href='#_'
-                className='relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group'
-              >
-                <span class='absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full'></span>
-                <span class='absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12'>
-                  <svg
-                    class='w-5 h-5 text-green-400'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='2'
-                      d='M14 5l7 7m0 0l-7 7m7-7H3'
-                    ></path>
-                  </svg>
-                </span>
-                <span class='absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200'>
-                  <svg
-                    class='w-5 h-5 text-green-400'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='2'
-                      d='M14 5l7 7m0 0l-7 7m7-7H3'
-                    ></path>
-                  </svg>
-                </span>
-                <span class='relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white'>
-                  Contact Us
-                </span>
-              </a>
+              {/*  */}
+              <Button href='/contact' txt='Contact Us' />
             </div>
           </div>
         </div>
@@ -401,7 +356,7 @@ export default function Navbar() {
         >
           <Popover.Panel
             focus
-            className='absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden'
+            className='absolute inset-x-0 top-0 z-20 origin-top-right transform p-2 transition md:hidden'
           >
             <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
               <div className='px-5 pt-5 pb-6'>
