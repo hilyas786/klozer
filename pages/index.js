@@ -186,11 +186,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className='bg-indigo-700'>
+        {/* <div className='bg-indigo-700'>
           <div className='mx-auto max-w-7xl py-16 px-4 sm:py-20 sm:px-6 lg:px-8'>
             <h2 className='text-3xl font-bold tracking-tight text-white'>
-              The world's most innovative companies use our app
+              The worlds most innovative companies use our app
             </h2>
             <div className='mt-8 flow-root lg:mt-10'>
               <div className='-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4'>
@@ -232,7 +231,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className='mt-14'>
           <div className='lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8'>
             <div className='mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0'>
