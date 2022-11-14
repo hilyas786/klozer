@@ -23,7 +23,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Button } from './Button';
 
-function BusinessIcon() {
+export function BusinessIcon({ className }) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -31,7 +31,7 @@ function BusinessIcon() {
       viewBox='0 0 24 24'
       stroke-width='1.5'
       stroke='currentColor'
-      className='text-indigo-600 flex-shrink-0 h-7 w-7'
+      className={className}
     >
       <path
         stroke-linecap='round'
@@ -42,7 +42,7 @@ function BusinessIcon() {
   );
 }
 
-function AccountingIcon() {
+export function AccountingIcon({ className }) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -51,7 +51,7 @@ function AccountingIcon() {
       fill='currentColor'
       strokeWidth={1}
       stroke='currentColor'
-      className='text-indigo-600 flex-shrink-0 h-7 w-7'
+      className={className}
     >
       <path
         d='M56.49,41.38H47.21V7.65a1.5,1.5,0,0,0-1.5-1.5H7.51A1.5,1.5,0,0,0,6,7.65V46.71A11.18,11.18,0,0,0,16.37,57.83l.78,0H44.24A14.47,14.47,0,0,0,55,53.23a10.3,10.3,0,0,0,2.51-4.64A24.22,24.22,0,0,0,58,42.88,1.5,1.5,0,0,0,56.49,41.38ZM17.15,54.85l-.59,0A8.16,8.16,0,0,1,9,46.71V9.15h35.2V41.38H26.79a1.5,1.5,0,0,0-1.5,1.5v3.84A8.15,8.15,0,0,1,17.15,54.85Zm37.41-7a7.31,7.31,0,0,1-1.82,3.33,11.47,11.47,0,0,1-8.51,3.64H24.75a11.12,11.12,0,0,0,3.54-8.14V44.38H55A17,17,0,0,1,54.56,47.88ZM25.84,15.49a1.5,1.5,0,0,1,1.5-1.5H39a1.5,1.5,0,0,1,0,3H27.34A1.5,1.5,0,0,1,25.84,15.49Zm14.67,10.3a1.5,1.5,0,0,1-1.5,1.5H28.44a1.5,1.5,0,0,1,0-3H39A1.5,1.5,0,0,1,40.51,25.79ZM39,37.58H17.88a1.5,1.5,0,1,1,0-3H39a1.5,1.5,0,0,1,0,3ZM22.09,24.05a4.51,4.51,0,0,1-.79,3.78,4.46,4.46,0,0,1-1.91,1.43V30.5a1.5,1.5,0,0,1-3,0V29.41a4.52,4.52,0,0,1-2.94-2.86,1.5,1.5,0,0,1,2.85-1,1.53,1.53,0,0,0,1.48,1,1.5,1.5,0,0,0,1.39-1.87,1.29,1.29,0,0,0-.89-.88c-.46-.17-1-.2-1.42-.34a4.56,4.56,0,0,1-3.41-4.64A4.5,4.5,0,0,1,16.4,15V13.8a1.5,1.5,0,1,1,3,0v1.14a4.45,4.45,0,0,1,1.08.52,4.5,4.5,0,0,1,1.92,3.16,1.5,1.5,0,1,1-3,.37,1.5,1.5,0,0,0-3,.07,1.62,1.62,0,0,0,1.27,1.59c.2.06.4.1.59.14a5.6,5.6,0,0,1,1.85.64A4.16,4.16,0,0,1,22.09,24.05Z'
@@ -60,7 +60,8 @@ function AccountingIcon() {
     </svg>
   );
 }
-function HRIcon() {
+// classname for nav is class='text-indigo-600 flex-shrink-0 h-7 w-7'
+export function HRIcon({ className }) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -68,7 +69,7 @@ function HRIcon() {
       viewBox='0 0 24 24'
       stroke-width='1.5'
       stroke='currentColor'
-      class='text-indigo-600 flex-shrink-0 h-7 w-7'
+      className={className}
     >
       <path
         stroke-linecap='round'
@@ -78,7 +79,7 @@ function HRIcon() {
     </svg>
   );
 }
-function ForeignIcon() {
+export function ForeignIcon({ className }) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -86,7 +87,7 @@ function ForeignIcon() {
       viewBox='0 0 24 24'
       stroke-width='1.5'
       stroke='currentColor'
-      class='text-indigo-600 flex-shrink-0 h-7 w-7'
+      className={className}
     >
       <path
         stroke-linecap='round'
@@ -96,7 +97,7 @@ function ForeignIcon() {
     </svg>
   );
 }
-function LabaunIcon() {
+export function LabaunIcon({ className }) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -104,7 +105,7 @@ function LabaunIcon() {
       viewBox='0 0 24 24'
       stroke-width='1.5'
       stroke='currentColor'
-      className='text-indigo-600 flex-shrink-0 h-7 w-7'
+      className={className}
     >
       <path
         stroke-linecap='round'
@@ -144,7 +145,7 @@ function EmailIcon() {
       <path
         stroke-linecap='round'
         stroke-linejoin='round'
-        d='M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25'
+        d='M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z'
       />
     </svg>
   );
@@ -185,8 +186,12 @@ const features = [
   },
 ];
 const callsToAction = [
-  { name: 'WhatsApp Us', href: '#', icon: WhatsappIcon },
-  { name: 'Email Us', href: '#', icon: EmailIcon },
+  {
+    name: 'WhatsApp Us',
+    href: 'https://api.whatsapp.com/send?phone=60192049269&text=Hi%20Klozer,%20im%20interested%20in%20opening%20a%20business%20in%20malaysia.',
+    icon: WhatsappIcon,
+  },
+  { name: 'Email Us', href: 'mailto:haider@email.com', icon: EmailIcon },
 ];
 // const resources = [
 //   {
@@ -305,7 +310,7 @@ export default function Navbar() {
                           <div className='space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8'>
                             {callsToAction.map((item) => (
                               <div key={item.name} className='flow-root'>
-                                <a
+                                <Link
                                   href={item.href}
                                   className='-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100'
                                 >
@@ -314,7 +319,7 @@ export default function Navbar() {
                                     aria-hidden='true'
                                   />
                                   <span className='ml-3'>{item.name}</span>
-                                </a>
+                                </Link>
                               </div>
                             ))}
                           </div>
@@ -415,8 +420,14 @@ export default function Navbar() {
                     </a>
                   ))}
                 </div> */}
-                <div>
-                  <a
+                <div className='flex items-center justify-center w-full'>
+                  <Button
+                    href='/contact'
+                    txt='Contact Us'
+                    variant='primary'
+                    className='text-center items-center justify-center flex px-5 py-4 '
+                  />
+                  {/* <a
                     href='#_'
                     class=' relative w-full inline-flex items-center justify-center py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group'
                   >
@@ -456,7 +467,7 @@ export default function Navbar() {
                     <span class='relative w-full text-center transition-colors duration-200 ease-in-out group-hover:text-white'>
                       Contact Us
                     </span>
-                  </a>
+                  </a> */}
 
                   {/* <a
                     href='#'
