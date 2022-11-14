@@ -12,9 +12,7 @@ export default async (req, res) => {
   LastName: ${body.LastName}\r\n
   Email: ${body.email}\r\n
   Phone: ${body.phone}\r\n
-  Subject: ${body.subject}\r\n
   Message: ${body.message}\r\n
-
   Company Incorporation: ${body.incorp}\r\n
   Visa: ${body.visa}\r\n
 

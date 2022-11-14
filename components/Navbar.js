@@ -41,6 +41,7 @@ function BusinessIcon() {
     </svg>
   );
 }
+
 function AccountingIcon() {
   return (
     <svg
@@ -152,32 +153,32 @@ function EmailIcon() {
 const features = [
   {
     name: 'Business Formation',
-    href: '#',
+    href: '/services/businessformation',
     description:
       'Get a better understanding of where your traffic is coming from.',
     icon: BusinessIcon,
   },
   {
     name: 'Accounting, Auditng & Tax Filing',
-    href: '#',
+    href: '/services/accountaudittax',
     description: 'Speak directly to your customers in a more meaningful way.',
     icon: AccountingIcon,
   },
   {
     name: 'Human Resource',
-    href: '#',
+    href: '/services/humanresource',
     description: "Your customers' data will be safe and secure.",
     icon: HRIcon,
   },
   {
     name: 'Foriegned Owned Company',
-    href: '#',
+    href: '/services/foreignownedcompany',
     description: "Connect with third-party tools that you're already using.",
     icon: ForeignIcon,
   },
   {
     name: 'Labaun Trust Malaysia',
-    href: '#',
+    href: '/services/labuantrust',
     description:
       'Build strategic funnels that will drive your customers to convert',
     icon: LabaunIcon,
