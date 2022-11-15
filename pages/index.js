@@ -6,10 +6,12 @@ import { Button } from '../components/Button';
 import { InboxIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import xeroAdvisor1 from '../public/img/xeroAdvisor1.png';
 import xeroSilver from '../public/img/xerosilver.png';
-import xeroCerti from '../public/img/xeroCerti.png';
+
 import xeroDash from '../public/img/dashboard.jpg';
+
 import wincenttammy from '../public/img/wincenttammy.jpg';
 import munchie from '../public/img/munchie.jpg';
+
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
 import {
   ArrowPathIcon,
