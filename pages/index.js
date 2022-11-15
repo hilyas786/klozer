@@ -8,7 +8,9 @@ import xeroAdvisor1 from '../public/img/xeroAdvisor1.png';
 import xeroSilver from '../public/img/xerosilver.png';
 import xeroCerti from '../public/img/xeroCerti.png';
 import xeroDash from '../public/img/dashboard.jpg';
-
+import wincenttammy from '../public/img/wincenttammy.jpg';
+import munchie from '../public/img/munchie.jpg';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
@@ -25,6 +27,7 @@ import {
   HRIcon,
   LabaunIcon,
 } from '../components/Navbar';
+import Faqs from '../components/Faqs';
 
 const features = [
   {
@@ -166,7 +169,7 @@ export default function Home() {
             <div className='mt-12 sm:mt-16 lg:mt-10'>
               <div className='flex items-center justify-center lg:relative lg:m-0 lg:h-full lg:px-0 h-full sm:w-full mb-2'>
                 <Image
-                  src={wincentLogo}
+                  src={wincenttammy}
                   height={500}
                   width={500}
                   alt='/'
@@ -270,6 +273,48 @@ export default function Home() {
             </div>
           </div>
         </div> */}
+        {/* features list section  */}
+        <div className='relative bg-gray-100 py-10 sm:py-10 lg:py-10'>
+          <div className='mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8'>
+            <h2 className='text-lg font-semibold text-indigo-600'>
+              Our Services
+            </h2>
+            <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+              Opening a business in Malaysia is simple ...
+            </p>
+            <p className='mx-auto mt-5 max-w-prose text-xl text-gray-500'>
+              We cover all services
+            </p>
+            <div className='mt-12'>
+              <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'>
+                {features.map((feature) => (
+                  <div key={feature.name} className='pt-6'>
+                    <div className='flow-root rounded-lg bg-gray-50 px-6 pb-8'>
+                      <div className='-mt-6'>
+                        <div>
+                          <span className='inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg'>
+                            <feature.icon
+                              className='h-6 w-6 text-white'
+                              aria-hidden='true'
+                            />
+                          </span>
+                        </div>
+                        <h3 className='mt-8 text-lg font-medium tracking-tight text-gray-900'>
+                          {feature.name}
+                        </h3>
+                        <p className='mt-5 text-base text-gray-500'>
+                          {feature.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* features list section ends  */}
+        {/* XERO SECTION  */}
         <div className='mt-14'>
           <div className='lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8'>
             <div className='mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0'>
@@ -291,7 +336,7 @@ export default function Home() {
                         viewBox='0 0 24 24'
                         stroke-width='2.5'
                         stroke='currentColor'
-                        class='w-6 h-6'
+                        class='w-7 h-7'
                       >
                         <path
                           stroke-linecap='round'
@@ -334,46 +379,148 @@ export default function Home() {
           </div>
         </div>
 
-        {/* features list section  */}
-        <div className='relative bg-white py-16 sm:py-24 lg:py-32'>
-          <div className='mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8'>
-            <h2 className='text-lg font-semibold text-indigo-600'>
-              Our Services
-            </h2>
-            <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-              Opening a business in Malaysia is easy ...
-            </p>
-            <p className='mx-auto mt-5 max-w-prose text-xl text-gray-500'>
-              We cover all the necessary services which
-            </p>
-            <div className='mt-12'>
-              <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'>
-                {features.map((feature) => (
-                  <div key={feature.name} className='pt-6'>
-                    <div className='flow-root rounded-lg bg-gray-50 px-6 pb-8'>
-                      <div className='-mt-6'>
-                        <div>
-                          <span className='inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg'>
-                            <feature.icon
-                              className='h-6 w-6 text-white'
-                              aria-hidden='true'
-                            />
-                          </span>
-                        </div>
-                        <h3 className='mt-8 text-lg font-medium tracking-tight text-gray-900'>
-                          {feature.name}
-                        </h3>
-                        <p className='mt-5 text-base text-gray-500'>
-                          {feature.description}
-                        </p>
-                      </div>
-                    </div>
+        {/* Careers section  */}
+        <div className='relative bg-gray-100 py-16'>
+          <div
+            className='absolute inset-x-0 top-0 hidden h-1/2 bg-gray-100 lg:block'
+            aria-hidden='true'
+          />
+          <div className='mx-auto max-w-7xl bg-indigo-700 lg:bg-transparent lg:px-8'>
+            <div className='lg:grid lg:grid-cols-12'>
+              <div className='relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16'>
+                <div
+                  className='absolute inset-x-0 h-1/2 bg-gray-100 lg:hidden'
+                  aria-hidden='true'
+                />
+                <div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0'>
+                  <div className='aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1'>
+                    <Image
+                      src={munchie}
+                      className='rounded-3xl object-cover object-center shadow-2xl '
+                      alt='/'
+                    />
                   </div>
-                ))}
+                </div>
+              </div>
+
+              <div className='relative bg-indigo-700 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl'>
+                <div
+                  className='absolute inset-0 hidden overflow-hidden rounded-3xl lg:block'
+                  aria-hidden='true'
+                >
+                  <svg
+                    className='absolute bottom-full left-full translate-y-1/3 -translate-x-2/3 transform xl:bottom-auto xl:top-0 xl:translate-y-0'
+                    width={404}
+                    height={384}
+                    fill='none'
+                    viewBox='0 0 404 384'
+                    aria-hidden='true'
+                  >
+                    <defs>
+                      <pattern
+                        id='64e643ad-2176-4f86-b3d7-f2c5da3b6a6d'
+                        x={0}
+                        y={0}
+                        width={20}
+                        height={20}
+                        patternUnits='userSpaceOnUse'
+                      >
+                        <rect
+                          x={0}
+                          y={0}
+                          width={4}
+                          height={4}
+                          className='text-indigo-500'
+                          fill='currentColor'
+                        />
+                      </pattern>
+                    </defs>
+                    <rect
+                      width={404}
+                      height={384}
+                      fill='url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)'
+                    />
+                  </svg>
+                  <svg
+                    className='absolute top-full -translate-y-1/3 -translate-x-1/3 transform xl:-translate-y-1/2'
+                    width={404}
+                    height={384}
+                    fill='none'
+                    viewBox='0 0 404 384'
+                    aria-hidden='true'
+                  >
+                    <defs>
+                      <pattern
+                        id='64e643ad-2176-4f86-b3d7-f2c5da3b6a6d'
+                        x={0}
+                        y={0}
+                        width={20}
+                        height={20}
+                        patternUnits='userSpaceOnUse'
+                      >
+                        <rect
+                          x={0}
+                          y={0}
+                          width={4}
+                          height={4}
+                          className='text-indigo-500'
+                          fill='currentColor'
+                        />
+                      </pattern>
+                    </defs>
+                    <rect
+                      width={404}
+                      height={384}
+                      fill='url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)'
+                    />
+                  </svg>
+                </div>
+                <div className='relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0'>
+                  <h2
+                    className='text-3xl font-bold tracking-tight text-white'
+                    id='join-heading'
+                  >
+                    Join our team
+                  </h2>
+                  <p className='text-lg text-white'>
+                    Looking for a place to grow in your career and personal
+                    life? Partner with us! Be a part of our youthful team of
+                    dreamers today.
+                  </p>
+                  <Button
+                    href='/careers'
+                    txt='Explore Open Positions '
+                    className='py-3 h-full mt-7'
+                  />
+                  {/* <a
+                    className='block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto'
+                    href='#'
+                  >
+                    Explore open positions
+                  </a> */}
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <Faqs />
+        {/* CTA SECTION  */}
+        <div className='bg-indigo-50'>
+          <div className='mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-24 lg:px-8'>
+            <h2 className='text-3xl font-bold tracking-tight text-gray-900 md:text-4xl'>
+              <span className='block'>Ready to open a company?</span>
+              <span className='block text-indigo-600'>
+                Consult with us today
+              </span>
+            </h2>
+            <div className='mt-8 flex lg:mt-0 lg:flex-shrink-0'>
+              <div className='inline-flex rounded-md shadow'>
+                <Button href='/contact' txt='Get started' />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* CTA SECTION ENDS  */}
       </div>
     </main>
   );

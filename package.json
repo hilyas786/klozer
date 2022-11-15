@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "^2.0.13",
     "@sendgrid/mail": "^7.7.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "clsx": "^1.2.1",
     "heroicons": "^2.0.13",
     "next": "13.0.1",
