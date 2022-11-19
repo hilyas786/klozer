@@ -22,7 +22,7 @@ export function Button({
   );
 
   return (
-    <Link href={href} {...props}>
+    <Link href={href} {...props} passHref>
       <button className={className} {...props}>
         <span class='absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full' />
         <span class='absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12'>

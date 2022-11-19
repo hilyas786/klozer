@@ -9,8 +9,8 @@ import xeroSilver from '../public/img/xerosilver.png';
 
 import xeroDash from '../public/img/dashboard.jpg';
 
-import wincenttammy from '../public/img/wincenttammy.jpg';
-import munchie from '../public/img/munchie.jpg';
+import wincenttammy from '../public/img/wincentTammy.jpg';
+import munchie from '../public/img/munchiee.jpg';
 
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
 import {
@@ -30,6 +30,7 @@ import {
   LabaunIcon,
 } from '../components/Navbar';
 import Faqs from '../components/Faqs';
+import Hero from '../components/Hero';
 
 const features = [
   {
@@ -75,44 +76,16 @@ export default function Home() {
   return (
     <main>
       {/* Hero card */}
-      <div className='relative bg-gray-100'>
-        <div className='absolute inset-x-0 bottom-0 h-1/2 bg-gray-100' />
-        <div className='mx-auto max-w-7xl sm:px-6 lg:px-8'>
-          <div className='relative shadow-xl sm:overflow-hidden sm:rounded-2xl'>
-            <div className='absolute inset-0'>
-              <Image
-                className='h-full w-full object-cover'
-                src={klskyline}
-                alt='/'
-              />
-              <div className='absolute inset-0 bg-indigo-700 mix-blend-multiply' />
-            </div>
-            <div className='relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8'>
-              <h1 className='text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl'>
-                <span className='block text-white'>
-                  Company Setting Up In Malaysia?
-                </span>
-                <span className='block text-indigo-200'>
-                  SDN BHD & Labuan Setup.
-                </span>
-              </h1>
-              <p className='mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl'>
-                Our years of experience means a complete hassle free setup in
-                Malaysia.
-              </p>
-              <div className='mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center justify-evenly '>
-                <div className='flex justify-evenly items-center sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5  '>
-                  <Button variant='primary' txt='Learn More' href='/aboutus' />
-                  <Button variant='primary' txt='Contact Us' href='/contact' />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* STATS */}
-
+      <Hero
+        src={klskyline}
+        heading1='Company Setting Up In Malaysia?'
+        heading2='SDN BHD & Labuan Setup.'
+        subtext=' Our years of experience means a complete hassle free setup in
+        Malaysia.'
+      >
+        <Button variant='primary' txt='Learn More' href='/aboutus' />
+        <Button variant='primary' txt='Contact Us' href='/contact' />
+      </Hero>
       {/* 2nd section */}
 
       <div className='relative overflow-hidden bg-gray-100 pb-32'>
