@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import klozerLogo from '../public/img/klozerlogo.png';
+import CTA from './CTA';
 
 const navigation = {
   main: [

@@ -10,6 +10,9 @@ const accountaudittax = () => {
         smallHeading='Account'
         mainHeading='Account, Audit & Tax'
         paragraph='osiubfiosbnion'
+        Title1='Accounting Experts'
+        Title2='hi'
+        Title3='hi'
       />
       <Faqs faqs={FaqsAccounts} />
       <div className='relative overflow-hidden bg-white py-16'>
