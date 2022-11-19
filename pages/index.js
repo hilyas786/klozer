@@ -9,7 +9,6 @@ import xeroSilver from '../public/img/xerosilver.png';
 
 import xeroDash from '../public/img/dashboard.jpg';
 
-import wincenttammy from '../public/img/wincentTammy.jpg';
 import munchie from '../public/img/munchiee.jpg';
 
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
@@ -144,7 +143,7 @@ export default function Home() {
             <div className='mt-12 sm:mt-16 lg:mt-10'>
               <div className='flex items-center justify-center lg:relative lg:m-0 lg:h-full lg:px-0 h-full sm:w-full mb-2'>
                 <Image
-                  src={wincenttammy}
+                  src='/img/wincentTammy.jpg'
                   height={500}
                   width={500}
                   alt='/'
