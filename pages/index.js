@@ -6,7 +6,7 @@ import { Button } from '../components/Button';
 import { InboxIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import xeroAdvisor1 from '../public/img/xeroAdvisor1.png';
 import xeroSilver from '../public/img/xerosilver.png';
-
+import wt from '../public/img/wt.jpg';
 import xeroDash from '../public/img/dashboard.jpg';
 
 import munchie from '../public/img/munchiee.jpg';
@@ -143,7 +143,7 @@ export default function Home() {
             <div className='mt-12 sm:mt-16 lg:mt-10'>
               <div className='flex items-center justify-center lg:relative lg:m-0 lg:h-full lg:px-0 h-full sm:w-full mb-2'>
                 <Image
-                  src={'/img/klozerlogo.png'}
+                  src={wt}
                   height={500}
                   width={500}
                   alt='/'
