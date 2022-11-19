@@ -6,22 +6,22 @@ import Hero from '../../../components/Hero';
 
 const posts = [
   {
-    title: 'MSC Malaysia Status Application In Malaysia',
-    href: '/aboutus',
+    title: 'Company Incorporation Malaysia',
+    href: '/services/b/company-incorporation-malaysia',
     imageUrl: '/img/klskyline.jpeg',
-    description:
-      'The MSC Malaysia status is given to companies, both local and foreign, that utilise and develop multimedia technologies in order to enhance or produce their products as well as their services. ',
+    description: 'Incorporation made',
   },
   {
     title: 'MSC Malaysia Status Application In Malaysia',
-    href: '/aboutus',
-    imageUrl: '/img/klskyline.jpeg',
+    href: '/services/b/msc-malaysia-status-application-in-malaysia',
+    imageUrl: '/img/msc.png',
     description:
       'The MSC Malaysia status is given to companies, both local and foreign, that utilise and develop multimedia technologies in order to enhance or produce their products as well as their services. ',
   },
+
   {
-    title: 'MSC Malaysia Status Application In Malaysia',
-    href: '/contactus',
+    title: 'Foriegn Owned Company',
+    href: '/services/foreignownedcompany',
     imageUrl: '/img/klskyline.jpeg',
     description:
       'The MSC Malaysia status is given to companies, both local and foreign, that utilise and develop multimedia technologies in order to enhance or produce their products as well as their services. ',
@@ -48,11 +48,12 @@ const BusinessFormation = () => {
         <div className='relative mx-auto max-w-7xl'>
           <div className='text-center'>
             <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-              From the blog
+              Got a business idea and ready to take on the world? The first step
+              is to start a company.
             </h2>
             <p className='mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-              libero labore natus atque, ducimus sed.
+              Got a business idea and ready to take on the world? The first step
+              is to start a company.
             </p>
           </div>
           <div className='mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3'>
@@ -65,8 +66,8 @@ const BusinessFormation = () => {
                   <Image
                     priority
                     className='h-48 w-full object-cover'
-                    width={500}
-                    height={500}
+                    width={300}
+                    height={300}
                     src={post.imageUrl}
                     alt=''
                   />

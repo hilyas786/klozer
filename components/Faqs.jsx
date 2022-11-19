@@ -1,29 +1,11 @@
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
-
-const faqs = [
-  {
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  {
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-];
-
+import FaqHome from './FaqData/FaqHome';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Faqs() {
+export default function Faqs({ faqs }) {
   return (
     <div className='bg-gray-100'>
       <div className='mx-auto max-w-7xl py-12 px-4 sm:py-16 sm:px-6 lg:px-8'>
@@ -32,7 +14,7 @@ export default function Faqs() {
             Frequently asked questions
           </h2>
           <dl className='mt-6 space-y-6 divide-y divide-gray-200'>
-            {faqs.map((faq) => (
+            {faqs?.map((faq) => (
               <Disclosure as='div' key={faq.question} className='pt-6'>
                 {({ open }) => (
                   <>

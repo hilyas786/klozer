@@ -161,7 +161,7 @@ const features = [
   },
   {
     name: 'Accounting, Auditng & Tax Filing',
-    href: '/services/accountaudittax',
+    href: '/services/account-audit-tax/account-audit-tax-home',
     description: 'Speak directly to your customers in a more meaningful way.',
     icon: AccountingIcon,
   },

@@ -8,7 +8,7 @@ import xeroAdvisor1 from '../public/img/xeroAdvisor1.png';
 import xeroSilver from '../public/img/xerosilver.png';
 import wt from '../public/img/wt.jpg';
 import xeroDash from '../public/img/dashboard.jpg';
-
+import FaqHome from '../components/FaqData/FaqHome';
 import munchie from '../public/img/munchiee.jpg';
 
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
@@ -477,7 +477,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Faqs />
+        <Faqs faqs={FaqHome} />
         {/* CTA SECTION  */}
         <div className='bg-indigo-50'>
           <div className='mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-24 lg:px-8'>
