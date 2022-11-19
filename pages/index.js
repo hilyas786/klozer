@@ -143,7 +143,7 @@ export default function Home() {
             <div className='mt-12 sm:mt-16 lg:mt-10'>
               <div className='flex items-center justify-center lg:relative lg:m-0 lg:h-full lg:px-0 h-full sm:w-full mb-2'>
                 <Image
-                  src={'/img/wincentTammy.jpg'}
+                  src={'/img/klozerlogo.png'}
                   height={500}
                   width={500}
                   alt='/'
