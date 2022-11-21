@@ -13,6 +13,7 @@ const accountaudittax = () => {
         Title1='Accounting Experts'
         Title2='hi'
         Title3='hi'
+        showButton={true}
       />
       <Faqs faqs={FaqsAccounts} />
       <div className='relative overflow-hidden bg-white py-16'>

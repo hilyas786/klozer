@@ -477,7 +477,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Faqs faqs={FaqHome} />
+
         {/* CTA SECTION  */}
 
         {/* CTA SECTION ENDS  */}

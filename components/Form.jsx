@@ -42,7 +42,7 @@ function WhatsappIcon() {
     </svg>
   );
 }
-export default function Contact() {
+export default function Form() {
   const [submit, onSubmit] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -69,7 +69,7 @@ export default function Contact() {
     <>
       <div className='overflow-hidden '>
         {/* Header */}
-        <div className='bg-gray-100'>
+        {/* <div className='bg-gray-100'>
           <div className='py-[80px] lg:py-32'>
             <div className='relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8'>
               <h1 className='text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl'>
@@ -81,11 +81,11 @@ export default function Contact() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Contact section */}
         <section
-          className='relative bg-gray-100'
+          className='relative bg-gray-100 mb-3'
           aria-labelledby='contact-heading'
         >
           <div
