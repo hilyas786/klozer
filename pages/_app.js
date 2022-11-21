@@ -3,12 +3,16 @@ import '../styles/globals.css';
 import { ThemeProvider } from 'next-themes';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
+import { useRouter } from 'next/router';
+
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  const showCTA = router.pathname === '/contact' ? false : true;
   return (
     <>
       <Navbar />
       <Component {...pageProps} />
-      <CTA />
+      {showCTA && <CTA />}
       <Footer />
     </>
   );
