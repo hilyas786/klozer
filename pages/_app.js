@@ -1,6 +1,6 @@
+import React from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/globals.css';
-import { ThemeProvider } from 'next-themes';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 import { useRouter } from 'next/router';

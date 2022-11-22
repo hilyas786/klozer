@@ -1,23 +1,20 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
+import React from 'react';
 import { Button } from '../../components/Button';
-import Hero from '../../components/Hero';
 import IntroSection from '../../components/IntroSection';
 import Form from '../../components/Form';
 import Faqs from '../../components/Faqs';
 import FaqCompanySetup from '../../components/FaqData/FaqCompanySetup';
 import HeadingSection from '../../components/HeadingSection';
 
-const posts = [
-  {
-    title: 'MSC Malaysia Status Application In Malaysia',
-    href: '/services/b/msc-malaysia-status-application-in-malaysia',
-    imageUrl: '/img/msc.png',
-    description:
-      'The MSC Malaysia status is given to companies, both local and foreign, that utilise and develop multimedia technologies in order to enhance or produce their products as well as their services. ',
-  },
-];
+// const posts = [
+//   {
+//     title: 'MSC Malaysia Status Application In Malaysia',
+//     href: '/services/b/msc-malaysia-status-application-in-malaysia',
+//     imageUrl: '/img/msc.png',
+//     description:
+//       'The MSC Malaysia status is given to companies, both local and foreign, that utilise and develop multimedia technologies in order to enhance or produce their products as well as their services. ',
+//   },
+// ];
 
 const BusinessFormation = () => {
   return (

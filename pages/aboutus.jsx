@@ -1,5 +1,9 @@
-import SimpleLayout from '../components/SimpleLayout';
+import React from 'react';
 
 export default function Aboutus() {
-  return <></>;
+  return (
+    <>
+      <div>hi</div>
+    </>
+  );
 }

@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import HeadingSection from '../../components/HeadingSection';
 import IntroSection from '../../components/IntroSection';
-import { InboxIcon, SparklesIcon } from '@heroicons/react/24/outline';
+import { InboxIcon } from '@heroicons/react/24/outline';
 import labuanfsa from '../../public/img/labuanfsa.png';
 
 const labuantrust = () => {
@@ -106,16 +105,16 @@ const labuantrust = () => {
         Title3='Visa Applications'
         showButton={true}
       />
-      <section class='bg-gray-100 body-font'>
-        <div class='container mx-auto max-w-[1280px] flex px-5 py-24 md:flex-row flex-col items-center '>
-          <div class='flex flex-col mb-16 md:mb-0 items-center text-center'>
+      <section className='bg-gray-100 body-font'>
+        <div className='container mx-auto max-w-[1280px] flex px-5 py-24 md:flex-row flex-col items-center '>
+          <div className='flex flex-col mb-16 md:mb-0 items-center text-center'>
             {/* <h1 class=' font-bold text-3xl sm:text-4xl  mb-4  text-gray-900'>
               Labuan Company Setup
             </h1> */}
-            <div class='flex items-center justify-center'>
+            <div className='flex items-center justify-center'>
               <Image src={labuanfsa} alt='/' />
             </div>
-            <p class='mb-8 leading-relaxed text-lg text-gray-700 '>
+            <p className='mb-8 leading-relaxed text-lg text-gray-700 '>
               The Malaysian government constantly welcomes all foreigners and
               foreign investors to set up their international businesses in
               Malaysia with a low tax benefit and 100% ownership through the
@@ -176,7 +175,7 @@ const labuantrust = () => {
               ))}
             </div>
             <div className='mb-10'>
-              <span class='h-1 w-full bg-indigo-600 absolute rounded-xl mt-5 mb-5' />
+              <span className='h-1 w-full bg-indigo-600 absolute rounded-xl mt-5 mb-5' />
             </div>
             <h2 className='text-3xl font-bold text-white mt-7'>SDN.BHD</h2>
             <p className='mt-5 text-lg text-gray-300'>

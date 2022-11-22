@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, React } from 'react';
 import { BiArrowFromBottom } from 'react-icons/bi';
 
 export const ScrollToTop = () => {

@@ -1,6 +1,6 @@
-import React, { Children } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import { Button } from './Button';
+
 import clsx from 'clsx';
 
 const Hero = ({ src, heading1, heading2, subtext, children, className }) => {

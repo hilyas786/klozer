@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import klozerLogo from '../public/img/klozerlogo.png';
 import { Button } from './Button';
-import CTA from './CTA';
+import React from 'react';
 
 // const navigation = {
 //   main: [

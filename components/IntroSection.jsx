@@ -1,5 +1,5 @@
 import { Button } from './Button';
-
+import React from 'react';
 const IntroSection = ({
   smallHeading,
   mainHeading,
