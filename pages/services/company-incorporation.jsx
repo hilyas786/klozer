@@ -1,27 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import klskyline from '../../../public/img/klskyline.jpeg';
-import { Button } from '../../../components/Button';
-import Hero from '../../../components/Hero';
-import IntroSection from '../../../components/IntroSection';
-import Form from '../../../components/Form';
-import Faqs from '../../../components/Faqs';
-import FaqCompanySetup from '../../../components/FaqData/FaqCompanySetup';
-import HeadingSection from '../../../components/HeadingSection';
+
+import { Button } from '../../components/Button';
+import Hero from '../../components/Hero';
+import IntroSection from '../../components/IntroSection';
+import Form from '../../components/Form';
+import Faqs from '../../components/Faqs';
+import FaqCompanySetup from '../../components/FaqData/FaqCompanySetup';
+import HeadingSection from '../../components/HeadingSection';
 
 const posts = [
   {
     title: 'MSC Malaysia Status Application In Malaysia',
     href: '/services/b/msc-malaysia-status-application-in-malaysia',
     imageUrl: '/img/msc.png',
-    description:
-      'The MSC Malaysia status is given to companies, both local and foreign, that utilise and develop multimedia technologies in order to enhance or produce their products as well as their services. ',
-  },
-
-  {
-    title: 'Foriegn Owned Company',
-    href: '/services/foreignownedcompany',
-    imageUrl: '/img/klskyline.jpeg',
     description:
       'The MSC Malaysia status is given to companies, both local and foreign, that utilise and develop multimedia technologies in order to enhance or produce their products as well as their services. ',
   },
@@ -120,13 +112,13 @@ const BusinessFormation = () => {
           <div className='absolute inset-0'>
             <div className='h-1/3 bg-gray-100 sm:h-2/3' />
           </div>
-          <div className='relative mx-auto max-w-7xl'>
+          {/* <div className='relative mx-auto max-w-7xl'>
             <div className='text-center'>
               <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
                 Useful Guides
               </h2>
             </div>
-            <div className='mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2'>
+            <div className='flex items-center justify-center'>
               {posts.map((post) => (
                 <div
                   key={post.title}
@@ -142,7 +134,7 @@ const BusinessFormation = () => {
                       alt=''
                     />
                   </div>
-                  <div className='flex flex-1 flex-col justify-between bg-white p-6'>
+                  <div className='flex justify-center items-center bg-white p-6'>
                     <div className='flex-1'>
                       <a href={post.href} className='mt-2 block'>
                         <p className='text-xl font-semibold text-gray-900'>
@@ -163,7 +155,7 @@ const BusinessFormation = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

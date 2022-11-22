@@ -116,7 +116,7 @@ export default function Home() {
                     </p>
                     <div className='mt-6'>
                       <Button
-                        href='/aboutus'
+                        href='/contact'
                         txt='Get Started'
                         variant='primary'
                       />

@@ -154,7 +154,7 @@ function EmailIcon() {
 const features = [
   {
     name: 'Company Incorporation',
-    href: '/services/b/businessformation',
+    href: '/services/company-incorporation',
     description:
       'Get a better understanding of where your traffic is coming from.',
     icon: BusinessIcon,

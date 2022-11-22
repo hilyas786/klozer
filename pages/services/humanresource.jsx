@@ -47,9 +47,9 @@ const humanresource = () => {
   return (
     <div>
       <IntroSection
-        smallHeading='NEed text'
+        smallHeading='HR Consultation'
         mainHeading='Human Resources'
-        paragraph='NEED TEXT'
+        paragraph='We have helped companies at large scale with various HR matters in Malaysia.'
         Title1='Payroll'
         Title2='Employment Contracts'
         Title3='HR Consultation'
