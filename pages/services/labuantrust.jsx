@@ -108,14 +108,14 @@ const labuantrust = () => {
       />
       <section class='bg-gray-100 body-font'>
         <div class='container mx-auto max-w-[1280px] flex px-5 py-24 md:flex-row flex-col items-center '>
-          <div class='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
+          <div class='flex flex-col mb-16 md:mb-0 items-center text-center'>
             {/* <h1 class=' font-bold text-3xl sm:text-4xl  mb-4  text-gray-900'>
               Labuan Company Setup
             </h1> */}
-            <div class='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
+            <div class='flex items-center justify-center'>
               <Image src={labuanfsa} alt='/' />
             </div>
-            <p class='mb-8 leading-relaxed'>
+            <p class='mb-8 leading-relaxed text-lg text-gray-700 '>
               The Malaysian government constantly welcomes all foreigners and
               foreign investors to set up their international businesses in
               Malaysia with a low tax benefit and 100% ownership through the
