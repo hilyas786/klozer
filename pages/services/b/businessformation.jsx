@@ -7,6 +7,7 @@ import IntroSection from '../../../components/IntroSection';
 import Form from '../../../components/Form';
 import Faqs from '../../../components/Faqs';
 import FaqCompanySetup from '../../../components/FaqData/FaqCompanySetup';
+import HeadingSection from '../../../components/HeadingSection';
 
 const posts = [
   {
@@ -104,24 +105,14 @@ const BusinessFormation = () => {
             </div>
           </div>
         </div>
-        <div className='bg-gray-100 '>
-          <div className='mx-auto max-w-7xl py-10 px-4 sm:py-16 sm:px-6 lg:px-8'>
-            <div className='text-center'>
-              <h2 className='text-lg font-semibold text-indigo-600'>
-                2 Hours Response Time
-              </h2>
-              <p className='mt-1 sm:text-4xl font-bold tracking-tight text-gray-900 text-3xl'>
-                No clients are too large or small for us.
-              </p>
-              <p className='mx-auto mt-5 max-w-xl text-xl text-gray-500'>
-                Make your life easier by filling all the information needed in
-                the form while we working on transforming company and navigate
-                your entire organisation. Registration takes 3-5 business days.
-                Why dont you start with the form below?
-              </p>
-            </div>
-          </div>
-        </div>
+        <HeadingSection
+          SmallHeading='2 Hours Response Time'
+          Title='No clients are too large or small for us.'
+          Paragraph='Make your life easier by filling all the information needed in
+          the form while we working on transforming company and navigate
+          your entire organisation. Registration takes 3-5 business days.
+          Why dont you start with the form below?'
+        />
         <Form />
         <Faqs faqs={FaqCompanySetup} />
         {/* Selection choices */}

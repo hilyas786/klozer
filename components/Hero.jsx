@@ -34,8 +34,6 @@ const Hero = ({ src, heading1, heading2, subtext, children, className }) => {
                 )}
               >
                 {children}
-                {/* <Button variant='primary' txt='Learn More' href='/aboutus' />
-                <Button variant='primary' txt='Contact Us' href='/contact' /> */}
               </div>
             </div>
           </div>

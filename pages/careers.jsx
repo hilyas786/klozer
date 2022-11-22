@@ -22,7 +22,7 @@ const careers = () => {
   return (
     <>
       <IntroSection
-        smallHeading='We are hiring !'
+        smallHeading='We are hiring!'
         mainHeading='Join a thriving company'
         paragraph='Klozer is leading corporate services provider that offers services such as company incorporation, professional accounting, tax and compliance etc. We offer our services for start-ups, SMEs, & MNCs Our office is located in Petaling Jaya, Malaysia.'
         Title1='Competitive salary'
@@ -30,9 +30,9 @@ const careers = () => {
         Title3='Work-life balance'
         showButton={false}
       />
-      <div className='relative bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-10 lg:pb-28'>
+      <div className='relative bg-gray-100 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-10 lg:pb-28'>
         <div className='absolute inset-0'>
-          <div className='h-1/3 bg-white sm:h-2/3' />
+          <div className='h-1/3 bg-gray-100 sm:h-2/3' />
         </div>
         <div className='relative mx-auto max-w-7xl'>
           <div className='text-center'>
