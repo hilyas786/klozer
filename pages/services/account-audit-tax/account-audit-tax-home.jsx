@@ -6,17 +6,77 @@ import IntroSection from '../../../components/IntroSection';
 import FaqsAccounts from '../../../components/FaqData/FaqAccount';
 import HeadingSection from '../../../components/HeadingSection';
 import { Button } from '../../../components/Button';
+import { CheckIcon } from '@heroicons/react/24/outline';
 const accountaudittax = () => {
+  const features = [
+    {
+      name: 'We will assist with monthly, quarterly, and yearly bookkeeping for active companies, both Malaysian and foreign owned.',
+    },
+    {
+      name: 'We operate with a licensed and trustworthy software for a speedy and accurate delivery.',
+    },
+    {
+      name: 'You will be promptly notified when there is an update or change in requirements.',
+    },
+    {
+      name: 'We believe in honesty, we will review and organize your information with transparency.',
+    },
+    {
+      name: 'As we pride ourselves in timeliness, you can expect your accounts to be fulfilled and submitted on time.',
+    },
+  ];
   return (
     <>
       <IntroSection
-        smallHeading='Account'
+        smallHeading='Financial obligations, covered.'
         mainHeading='Accounting, Audit & Tax'
+        paragraph='Klozer accountants will not just manage credits and debits, but also monitor all accounts, help create a detailed budget, advise you and your business on the
+        financial status, while spotting and solving problems as fast as possible.'
         Title1='Accounting Experts'
         Title2='Tax Planning'
         Title3='Legal Compliances'
         showButton={true}
       />
+
+      <div className='bg-gray-100'>
+        <div className='mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:px-8 lg:py-40'>
+          <div>
+            <h2 className='text-lg font-semibold leading-8 tracking-tight text-indigo-600'>
+              Yearly, Quarterly or Monthly Packages
+            </h2>
+            <p className='mt-2 text-4xl font-bold tracking-tight text-gray-900'>
+              Accounting & Bookkeeping
+            </p>
+            <p className='mt-6 text-base leading-7 text-gray-600'>
+              Accounting plays an important role for all businesses. Accounting
+              involves the setting up of records and the maintenance of said
+              records in a very detailed manner, with the goal of keeping all
+              parties aware of the growth and prospect of the company.
+            </p>
+          </div>
+          <div className='mt-20 lg:col-span-2 lg:mt-0'>
+            <dl className='grid grid-rows-3 gap-12 sm:grid-flow-row sm:grid-cols-2 sm:grid-rows-4'>
+              {features.map((feature) => (
+                <div key={feature.name} className='relative'>
+                  <dt>
+                    <CheckIcon
+                      className='absolute mt-1 h-6 w-6 text-indigo-600'
+                      aria-hidden='true'
+                    />
+                    <p className='ml-10 text-lg font-semibold leading-8 text-gray-900'>
+                      {feature.name}
+                    </p>
+                  </dt>
+                  {/* <dd className='mt-2 ml-10 text-base leading-7 text-gray-600'>
+                    {feature.description}
+                  </dd> */}
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </div>
+
       <HeadingSection
         SmallHeading='Taxation'
         Title='Tax Compliance Malaysia'

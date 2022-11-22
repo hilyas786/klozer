@@ -13,9 +13,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <NextNProgress
         color='#3949ab'
-        height={6}
+        height={8}
         showOnShallow={true}
         options={{ showSpinner: true }}
+        startPosition={0.3}
       />
       <Navbar />
       <Component {...pageProps} />
