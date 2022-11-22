@@ -172,12 +172,6 @@ const features = [
     icon: HRIcon,
   },
   {
-    name: 'Foriegned Owned Company',
-    href: '/services/foreignownedcompany',
-    description: "Connect with third-party tools that you're already using.",
-    icon: ForeignIcon,
-  },
-  {
     name: 'Labaun Trust Malaysia',
     href: '/services/labuantrust',
     description:

@@ -82,7 +82,6 @@ export default function Home() {
         subtext=' Our years of experience means a complete hassle free setup in
         Malaysia.'
       >
-        <Button variant='primary' txt='Learn More' href='/aboutus' />
         <Button variant='primary' txt='Contact Us' href='/contact' />
       </Hero>
       {/* 2nd section */}

@@ -29,7 +29,7 @@ const Hero = ({ src, heading1, heading2, subtext, children, className }) => {
             <div className='mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center justify-evenly '>
               <div
                 className={clsx(
-                  'flex justify-evenly items-center sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5',
+                  'flex justify-center items-center mx-auto',
                   className
                 )}
               >
