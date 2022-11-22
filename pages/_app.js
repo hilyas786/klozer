@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 import { useRouter } from 'next/router';
+import { ScrollToTop } from '../components/ScrollBackToTop';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Navbar />
+
       <Component {...pageProps} />
       {showCTA && <CTA />}
       <Footer />

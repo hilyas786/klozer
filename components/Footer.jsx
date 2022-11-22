@@ -1,12 +1,14 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import klozerLogo from '../public/img/klozerlogo.png';
 import CTA from './CTA';
 
 const navigation = {
   main: [
-    { name: 'About', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'About', href: '/aboutus' },
+    { name: 'Careers', href: '/careers' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Company Incorporation', href: '#' },
   ],
   social: [
     {
@@ -54,7 +56,9 @@ export default function Footer() {
     <footer className='bg-gray-100 '>
       <div className='mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-center items-center mb-6'>
-          <Image src={klozerLogo} alt='/' width={200} height={200} />
+          <Link href='/'>
+            <Image src={klozerLogo} alt='/' width={200} height={200} />{' '}
+          </Link>
         </div>
         <nav
           className='-mx-5 -my-2 flex flex-wrap justify-center'

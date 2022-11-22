@@ -1,218 +1,338 @@
+import Image from 'next/image';
 import React from 'react';
 import Faqs from '../../../components/Faqs';
+import tax from '../../../public/img/tax.jpg';
 import IntroSection from '../../../components/IntroSection';
 import FaqsAccounts from '../../../components/FaqData/FaqAccount';
-
+import HeadingSection from '../../../components/HeadingSection';
+import { Button } from '../../../components/Button';
 const accountaudittax = () => {
   return (
     <>
       <IntroSection
         smallHeading='Account'
-        mainHeading='Account, Audit & Tax'
-        paragraph='osiubfiosbnion'
+        mainHeading='Accounting, Audit & Tax'
         Title1='Accounting Experts'
-        Title2='hi'
-        Title3='hi'
+        Title2='Tax Planning'
+        Title3='Legal Compliances'
         showButton={true}
       />
-      <Faqs faqs={FaqsAccounts} />
-      <div className='relative overflow-hidden bg-white py-16'>
-        <div className='hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]'>
-          <div
-            className='relative mx-auto h-full max-w-prose text-lg'
-            aria-hidden='true'
-          >
-            <svg
-              className='absolute top-12 left-full translate-x-32 transform'
-              width={404}
-              height={384}
-              fill='none'
-              viewBox='0 0 404 384'
-            >
-              <defs>
-                <pattern
-                  id='74b3fd99-0a6f-4271-bef2-e80eeafdf357'
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits='userSpaceOnUse'
-                >
-                  <rect
-                    x={0}
-                    y={0}
-                    width={4}
-                    height={4}
-                    className='text-gray-200'
-                    fill='currentColor'
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width={404}
-                height={384}
-                fill='url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)'
-              />
-            </svg>
-            <svg
-              className='absolute top-1/2 right-full -translate-y-1/2 -translate-x-32 transform'
-              width={404}
-              height={384}
-              fill='none'
-              viewBox='0 0 404 384'
-            >
-              <defs>
-                <pattern
-                  id='f210dbf6-a58d-4871-961e-36d5016a0f49'
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits='userSpaceOnUse'
-                >
-                  <rect
-                    x={0}
-                    y={0}
-                    width={4}
-                    height={4}
-                    className='text-gray-200'
-                    fill='currentColor'
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width={404}
-                height={384}
-                fill='url(#f210dbf6-a58d-4871-961e-36d5016a0f49)'
-              />
-            </svg>
-            <svg
-              className='absolute bottom-12 left-full translate-x-32 transform'
-              width={404}
-              height={384}
-              fill='none'
-              viewBox='0 0 404 384'
-            >
-              <defs>
-                <pattern
-                  id='d3eb07ae-5182-43e6-857d-35c643af9034'
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits='userSpaceOnUse'
-                >
-                  <rect
-                    x={0}
-                    y={0}
-                    width={4}
-                    height={4}
-                    className='text-gray-200'
-                    fill='currentColor'
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width={404}
-                height={384}
-                fill='url(#d3eb07ae-5182-43e6-857d-35c643af9034)'
-              />
-            </svg>
+      <HeadingSection
+        SmallHeading='Taxation'
+        Title='Tax Compliance Malaysia'
+        Paragraph=' Taxation is a highly specialised task which involves legislation and rules that constatly changes every year. Proper tax planning, documenting and presenting is required to ensure a correct submission for every company and business.'
+      />
+      <section class='text-gray-600 body-font bg-gray-100'>
+        <div class='container px-5 py-14 mx-auto flex flex-wrap'>
+          <div class='flex flex-wrap w-full'>
+            <div class='lg:w-2/5 md:w-1/2 md:pr-10 md:py-6'>
+              <h1 className='text-3xl font-bold mb-5'>
+                Preparation and reviewing of tax computation
+              </h1>
+              <div class='flex relative pb-12'>
+                <div class='h-full w-10 absolute inset-0 flex items-center justify-center'>
+                  <div class='h-full w-1 bg-gray-300 pointer-events-none'></div>
+                </div>
+                <div class='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    class='w-5 h-5'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+                    <path d='M22 4L12 14.01l-3-3'></path>
+                  </svg>
+                </div>
+                <div class='flex-grow pl-4'>
+                  <h2 class='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                    Filing of Tax Returns via Form C / C1 / PT / TA/ TC/ TR or
+                    TN.
+                  </h2>
+                </div>
+              </div>
+
+              <div class='flex relative pb-12'>
+                <div class='h-full w-10 absolute inset-0 flex items-center justify-center'>
+                  <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
+                </div>
+                <div class='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    class='w-5 h-5'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+                    <path d='M22 4L12 14.01l-3-3'></path>
+                  </svg>
+                </div>
+                <div class='flex-grow pl-4'>
+                  <h2 class='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                    Filing of Estimate of Tax Payable (CP204) or Estimation
+                    (CP204A).
+                  </h2>
+                </div>
+              </div>
+              <div class='flex relative pb-12'>
+                <div class='h-full w-10 absolute inset-0 flex items-center justify-center'>
+                  <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
+                </div>
+                <div class='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    class='w-5 h-5'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+                    <path d='M22 4L12 14.01l-3-3'></path>
+                  </svg>
+                </div>
+                <div class='flex-grow pl-4'>
+                  <h2 class='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                    Preparation of working sheets alongside appendices
+                  </h2>
+                </div>
+              </div>
+              <div class='flex relative pb-12'>
+                <div class='h-full w-10 absolute inset-0 flex items-center justify-center'>
+                  <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
+                </div>
+                <div class='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    class='w-5 h-5'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+                    <path d='M22 4L12 14.01l-3-3'></path>
+                  </svg>
+                </div>
+                <div class='flex-grow pl-4'>
+                  <h2 class='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                    Registration of Income Tax Number (C & E number).
+                  </h2>
+                </div>
+              </div>
+              <div class='flex relative pb-12'>
+                <div class='h-full w-10 absolute inset-0 flex items-center justify-center'>
+                  <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
+                </div>
+                <div class='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    class='w-5 h-5'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+                    <path d='M22 4L12 14.01l-3-3'></path>
+                  </svg>
+                </div>
+                <div class='flex-grow pl-4'>
+                  <h2 class='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                    Assisting with statement of monetary and non-monetary
+                    payment to a dealer, an agent, or a distributor.
+                  </h2>
+                </div>
+              </div>
+              <div class='flex relative pb-12'>
+                <div class='h-full w-10 absolute inset-0 flex items-center justify-center'>
+                  <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
+                </div>
+                <div class='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    class='w-5 h-5'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+                    <path d='M22 4L12 14.01l-3-3'></path>
+                  </svg>
+                </div>
+                <div class='flex-grow pl-4'>
+                  <h2 class='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                    Offering advice on the payment of the balance of tax
+                    payable, should there be any, based on the submitted Tax
+                    Returns.
+                  </h2>
+                </div>
+              </div>
+              <div class='flex relative pb-12'>
+                <div class='h-full w-10 absolute inset-0 flex items-center justify-center'>
+                  <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
+                </div>
+                <div class='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    class='w-5 h-5'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+                    <path d='M22 4L12 14.01l-3-3'></path>
+                  </svg>
+                </div>
+                <div class='flex-grow pl-4'>
+                  <h2 class='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                    Sending updates on the latest tax developments
+                  </h2>
+                </div>
+              </div>
+              <div class='flex relative'>
+                <div class='flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10'>
+                  <svg
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    class='w-5 h-5'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M22 11.08V12a10 10 0 11-5.93-9.14'></path>
+                    <path d='M22 4L12 14.01l-3-3'></path>
+                  </svg>
+                </div>
+                <div class='flex-grow pl-4'>
+                  <h2 class='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                    Providing reminders of deadlines
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <Image
+              className='lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12'
+              alt='/'
+              src={tax}
+            />
           </div>
         </div>
-        <div className='relative px-4 sm:px-6 lg:px-8'>
-          <div className='mx-auto max-w-prose text-lg'>
-            <h1>
-              <span className='block text-center text-lg font-semibold text-indigo-600'>
-                Introducing
-              </span>
-              <span className='mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl'>
-                JavaScript for Beginners
-              </span>
-            </h1>
-            <p className='mt-8 text-xl leading-8 text-gray-500'>
-              Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem.
-              At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at
-              vitae feugiat egestas ac. Diam nulla orci at in viverra
-              scelerisque eget. Eleifend egestas fringilla sapien.
-            </p>
-          </div>
-          <div className='prose prose-lg prose-indigo mx-auto mt-6 text-gray-500'>
-            <p>
-              Faucibus commodo massa rhoncus, volutpat.{' '}
-              <strong>Dignissim</strong> sed <strong>eget risus enim</strong>.
-              Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-              praesent donec est. Odio penatibus risus viverra tellus varius sit
-              neque erat velit. Faucibus commodo massa rhoncus, volutpat.
-              Dignissim sed eget risus enim.{' '}
-              <a href='#'>Mattis mauris semper</a> sed amet vitae sed turpis id.
-            </p>
-            <ul role='list'>
-              <li>Quis elit egestas venenatis mattis dignissim.</li>
-              <li>
-                Cras cras lobortis vitae vivamus ultricies facilisis tempus.
-              </li>
-              <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-            </ul>
-            <p>
-              Quis semper vulputate aliquam venenatis egestas sagittis quisque
-              orci. Donec commodo sit viverra aliquam porttitor ultrices gravida
-              eu. Tincidunt leo, elementum mattis elementum ut nisl, justo,
-              amet, mattis. Nunc purus, diam commodo tincidunt turpis. Amet,
-              duis sed elit interdum dignissim.
-            </p>
-            <h2>From beginner to expert in 30 days</h2>
-            <p>
-              Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-              consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-              vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-              pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim
-              cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis
-              ipsum eu a sed convallis diam.
-            </p>
-            <blockquote>
-              <p>
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+      </section>
+      <HeadingSection
+        SmallHeading='Expert Advice'
+        Title='Tax Consulting'
+        Paragraph='We assist in all areas of tax consultation, including legislations, rules, ramifications, tax compliance, guidelines, tax planning, review, and more, for businesses of large, medium and small sizes, providing a customised and tailored tax consultant service that will meet your business needs.'
+      />
+      <section class='text-gray-600 body-font bg-gray-100'>
+        <div class='container px-5 py-24 mx-auto'>
+          <div class='flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col'>
+            <div class='sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'>
+              <svg
+                fill='none'
+                stroke='currentColor'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                class='sm:w-16 sm:h-16 w-10 h-10'
+                viewBox='0 0 24 24'
+              >
+                <path d='M22 12h-4l-3 9L9 3l-3 9H2'></path>
+              </svg>
+            </div>
+            <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+              <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+                Tax Planning Malaysia
+              </h2>
+              <p class='leading-relaxed text-base text-gray-700'>
+                Tax planning is crucial for businesses as it analyses a
+                business’ financial situation and strategizes a plan from a tax
+                perspective. Through tax planning, we can work toward tax
+                efficiency by ensuring that the elements of a financial plan
+                will work well together in the most efficient way.
               </p>
-            </blockquote>
-            <p>
-              Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-              enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-              praesent donec est. Odio penatibus risus viverra tellus varius sit
-              neque erat velit.
-            </p>
-            <figure>
-              <img
-                className='w-full rounded-lg'
-                src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3'
-                alt=''
-                width={1310}
-                height={873}
-              />
-              <figcaption>
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-              </figcaption>
-            </figure>
-            <h2>Everything you need to get up and running</h2>
-            <p>
-              Purus morbi dignissim senectus mattis <a href='#'>adipiscing</a>.
-              Amet, massa quam varius orci dapibus volutpat cras. In amet eu
-              ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut
-              viverra ridiculus non molestie. Gravida quis fringilla amet eget
-              dui tempor dignissim. Facilisis auctor venenatis varius nunc,
-              congue erat ac. Cras fermentum convallis quam.
-            </p>
-            <p>
-              Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-              enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-              praesent donec est. Odio penatibus risus viverra tellus varius sit
-              neque erat velit.
-            </p>
+            </div>
+          </div>
+          <div class='flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col'>
+            <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+              <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+                Tax Agent, Chartered Accountant and Consultant Tax Agent,
+              </h2>
+              <p class='leading-relaxed text-base text-gray-700'>
+                At Klozer, our tax agents will ensure an error-free tax filing
+                experience from start to finish. They will cover all aspects of
+                taxation, which will allow you to focus solely on your business
+                plans for the new year
+              </p>
+            </div>
+            <div class='sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'>
+              <svg
+                fill='none'
+                stroke='currentColor'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                class='sm:w-16 sm:h-16 w-10 h-10'
+                viewBox='0 0 24 24'
+              >
+                <circle cx='6' cy='6' r='3'></circle>
+                <circle cx='6' cy='18' r='3'></circle>
+                <path d='M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12'></path>
+              </svg>
+            </div>
+          </div>
+          <div class='flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col'>
+            <div class='sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'>
+              <svg
+                fill='none'
+                stroke='currentColor'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                class='sm:w-16 sm:h-16 w-10 h-10'
+                viewBox='0 0 24 24'
+              >
+                <path d='M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2'></path>
+                <circle cx='12' cy='7' r='4'></circle>
+              </svg>
+            </div>
+            <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+              <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+                Withholding Tax Service Malaysia
+              </h2>
+              <p class='leading-relaxed text-base text-gray-700'>
+                Note the withholding tax percentage based on the below payment
+                types: Interest Paid to Non-Resident Persons: 15% Royalty Paid
+                to Non-Resident Persons: 10% Special Classes of Income Paid to
+                Non-Resident Persons: 10% Contract Payments to Non-Resident
+                Contractors: 10% + 3% Non-Resident Public Entertainers: 15%
+                Income under Section 4(f): 10%
+              </p>
+            </div>
+          </div>
+          {/* <button class='flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
+            Button
+          </button> */}
+          <div className='flex items-center justify-center mt-10 '>
+            <Button href='/contact' txt='Contact Us' />
           </div>
         </div>
-      </div>
+      </section>
+      {/* <Faqs faqs={FaqsAccounts} /> */}
     </>
   );
 };
