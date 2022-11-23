@@ -267,7 +267,7 @@ export default function Contact() {
                           className='h-6 w-6 flex-shrink-0 text-teal-200'
                           aria-hidden='true'
                         />
-                        <span className='ml-3'>60195195</span>
+                        <span className='ml-3'>+60378876071</span>
                       </dd>
                       <dt>
                         <span className='sr-only'>Email</span>
@@ -277,7 +277,7 @@ export default function Contact() {
                           className='h-6 w-6 flex-shrink-0 text-teal-200'
                           aria-hidden='true'
                         />
-                        <span className='ml-3'>klozer.com</span>
+                        <span className='ml-3'>wincentlow@klozergroup.com</span>
                       </dd>
                       <dt>
                         <span className='sr-only'>Email</span>
@@ -292,7 +292,7 @@ export default function Contact() {
                             aria-hidden='true'
                           />
                         </Link>
-                        <span className='ml-3'>1235465456</span>
+                        <span className='ml-3'>+60123193515</span>
                       </dd>
                     </dl>
                   </div>

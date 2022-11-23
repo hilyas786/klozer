@@ -168,10 +168,14 @@ const features = [
 const callsToAction = [
   {
     name: 'WhatsApp Us',
-    href: 'https://api.whatsapp.com/send?phone=60192049269&text=Hi%20Klozer,%20im%20interested%20in%20opening%20a%20business%20in%20malaysia.',
+    href: 'https://api.whatsapp.com/send?phone=60123193515&text=Hi%20Klozer,%20im%20interested%20in%20opening%20a%20business%20in%20malaysia.',
     icon: WhatsappIcon,
   },
-  { name: 'Email Us', href: 'mailto:haider@email.com', icon: EmailIcon },
+  {
+    name: 'Email Us',
+    href: 'mailto:wincentlow@klozergroup.com',
+    icon: EmailIcon,
+  },
 ];
 // const resources = [
 //   {
