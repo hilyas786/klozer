@@ -38,12 +38,12 @@ const accountaudittax = () => {
       />
 
       <div className='bg-gray-100'>
-        <div className='mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:px-8 lg:py-40'>
+        <div className='mx-auto max-w-7xl pt-20 px-6 '>
           <div>
-            <h2 className='text-lg font-semibold leading-8 tracking-tight text-indigo-600'>
+            <h2 className='text-lg font-semibold leading-8 tracking-tight text-indigo-600 text-center'>
               Yearly, Quarterly or Monthly Packages
             </h2>
-            <p className='mt-2 text-4xl font-bold tracking-tight text-gray-900'>
+            <p className='mt-2 text-4xl font-bold tracking-tight text-gray-900 text-center'>
               Accounting & Bookkeeping
             </p>
             <p className='mt-6 text-base leading-7 text-gray-600'>
@@ -53,7 +53,7 @@ const accountaudittax = () => {
               parties aware of the growth and prospect of the company.
             </p>
           </div>
-          <div className='mt-20 lg:col-span-2 lg:mt-0'>
+          <div className='mt-20 lg:col-span-2 lg:mt-20'>
             <dl className='grid grid-rows-3 gap-12 sm:grid-flow-row sm:grid-cols-2 sm:grid-rows-4'>
               {features.map((feature) => (
                 <div key={feature.name} className='relative'>
@@ -66,9 +66,6 @@ const accountaudittax = () => {
                       {feature.name}
                     </p>
                   </dt>
-                  {/* <dd className='mt-2 ml-10 text-base leading-7 text-gray-600'>
-                    {feature.description}
-                  </dd> */}
                 </div>
               ))}
             </dl>
