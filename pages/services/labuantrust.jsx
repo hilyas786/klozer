@@ -8,44 +8,44 @@ const labuantrust = () => {
   const labuan = [
     {
       id: 1,
-      emphasis: '- A paid up capital of USD1 for 100% foreign-owned.',
+      emphasis: 'A paid up capital of USD1 for 100% foreign-owned.',
       icon: InboxIcon,
     },
     {
       id: 2,
-      emphasis: '- The target market is international.',
+      emphasis: 'The target market is international.',
     },
     {
       id: 3,
-      emphasis: '- A minimum of one director and one shareholder.',
+      emphasis: 'A minimum of one director and one shareholder.',
     },
     {
       id: 4,
       emphasis:
-        '- Re-domicile; can be transferred to any jurisdiction that recognises a Labuan Company.',
+        'Re-domicile; can be transferred to any jurisdiction that recognises a Labuan Company.',
     },
     {
       id: 5,
       emphasis:
-        '- The business can have shares in a Malaysia Sdn Bhd and other forms of investment.',
+        'The business can have shares in a Malaysia Sdn Bhd and other forms of investment.',
     },
     {
       id: 6,
-      emphasis: '- Corporate tax of 3% for the international market.',
+      emphasis: 'Corporate tax of 3% for the international market.',
     },
     {
       id: 7,
       emphasis:
-        '- Directors will be subjected to no personal tax, while expatriates employed will receive a tax rebate of 50% on a 0-28% personal tax rate.',
+        'Directors will be subjected to no personal tax, while expatriates employed will receive a tax rebate of 50% on a 0-28% personal tax rate.',
     },
     {
       id: 8,
-      emphasis: '- Audit reporting is only required for trading companies.',
+      emphasis: 'Audit reporting is only required for trading companies.',
     },
     {
       id: 9,
       emphasis:
-        '- All information is strictly confidential unless permission is granted by the owner of the Labuan Company',
+        'All information is strictly confidential unless permission is granted by the owner of the Labuan Company',
     },
   ];
   const sdn = [
@@ -97,7 +97,7 @@ const labuantrust = () => {
     <>
       <IntroSection
         smallHeading='Offshore'
-        mainHeading='Labaun Trust Malaysia'
+        mainHeading='Labuan Trust Malaysia'
         paragraph=' Labuan is one of the top locations in Malaysia for business
       ventures in the Asia Pacific region. More business owners are planting international ventures in Labuan.'
         Title1='100% Ownership'
@@ -150,7 +150,7 @@ const labuantrust = () => {
               Comparisons
             </h2>
             <p className='mt-3 text-3xl font-bold tracking-tight text-white'>
-              Labaun Company VS SDN. BHD.
+              Labuan Company Vs Sdn. Bhd.
             </p>
             <p className='mt-5 text-lg text-gray-300'>
               In comparison to the Malaysia Sdn Bhd, the Labuan Company is

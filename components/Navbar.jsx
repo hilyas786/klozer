@@ -158,7 +158,7 @@ const features = [
     icon: HRIcon,
   },
   {
-    name: 'Labaun Trust Malaysia',
+    name: 'Labuan Trust Malaysia',
     href: '/services/labuantrust',
     description:
       'Build strategic funnels that will drive your customers to convert',
@@ -177,7 +177,7 @@ const callsToAction = [
     icon: EmailIcon,
   },
 ];
-// const resources = [
+
 //   {
 //     name: 'Help Center',
 //     description:

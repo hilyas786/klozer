@@ -7,7 +7,10 @@ import wt from '../public/img/wt.jpg';
 import xeroDash from '../public/img/dashboard.jpg';
 import munchie from '../public/img/munchiee.jpg';
 import Head from 'next/head';
-import { ChatBubbleOvalLeftEllipsisIcon } from '@heroicons/react/24/outline';
+import {
+  ChatBubbleOvalLeftEllipsisIcon,
+  CurrencyDollarIcon,
+} from '@heroicons/react/24/outline';
 import {
   AccountingIcon,
   BusinessIcon,
@@ -38,7 +41,7 @@ const features = [
     icon: () => <HRIcon className='text-white h-7 w-7' />,
   },
   {
-    name: 'Foriengned Owned Company',
+    name: 'Foreigner Owned Company',
     description:
       'We have the expertise in all areas of helping our overseas clients to settle in Malaysia.',
     icon: () => <ForeignIcon className='text-white h-7 w-7' />,
@@ -52,10 +55,10 @@ const features = [
   },
 
   {
-    name: 'Always Available',
+    name: 'Bank Account Opening',
     description:
-      'We aim to provide a service which focuses on communication for our clients. We are always attentive to all our clients. At Klozer we thrive to build healthy releationships with our clients.',
-    icon: ChatBubbleOvalLeftEllipsisIcon,
+      'After successfully registering your company, the next step is opening a corporate bank account for your company’s financial transactions. The process of opening a corporate bank account in Malaysia is relatively straightforward once you have all documents and bank requirements prepared.',
+    icon: CurrencyDollarIcon,
   },
 ];
 export default function Home() {
