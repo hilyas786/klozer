@@ -179,7 +179,7 @@ const labuantrust = () => {
             </div>
             <h2 className='text-3xl font-bold text-white mt-7'>SDN.BHD</h2>
             <p className='mt-5 text-lg text-gray-300'>
-              The SDN. BHD. business structure includes the following:
+              The Sdn. Bhd business structure includes the following:
             </p>
             <div className='mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2'>
               {sdn.map((item) => (
