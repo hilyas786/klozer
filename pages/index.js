@@ -121,10 +121,12 @@ export default function Home() {
                     <footer className='mt-3'>
                       <div className='flex items-center space-x-3'>
                         <div className='flex-shrink-0'>
-                          <img
+                          <Image
                             className='h-6 w-6 rounded-full'
                             src='https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80'
-                            alt=''
+                            alt='/'
+                            width={100}
+                            height={100}
                           />
                         </div>
                         <div className='text-base font-medium text-gray-700'>

@@ -371,7 +371,7 @@ export default function Contact() {
                         </div>
                         <div className='mt-1'>
                           <input
-                            type='text'
+                            type='number'
                             name='phone'
                             id='phone'
                             autoComplete='tel'

@@ -16,7 +16,7 @@ const Hero = ({ src, heading1, heading2, subtext, children, className }) => {
               src={src}
               alt='/'
             />
-            <div className='absolute inset-0 bg-indigo-700 mix-blend-multiply' />
+            <div className='absolute inset-0 bg-indigo-500 mix-blend-multiply' />
           </div>
           <div className='relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8'>
             <h1 className='text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl'>

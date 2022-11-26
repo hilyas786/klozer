@@ -20,9 +20,9 @@ export default async (req, res) => {
   `;
 
   await mail.send({
-    to: 'haider@ilyasinc.com',
-    from: 'haider@ilyasinc.com',
-    subject: 'Ilyas Tech Enquiry - Contact Us',
+    to: 'wincentlow@klozergroup.com',
+    from: 'wincentlow@www.klozergroup.com',
+    subject: 'Klozer Contact Us',
     text: message,
     html: message.replace(/\r\n/g, '<br>'),
   });
