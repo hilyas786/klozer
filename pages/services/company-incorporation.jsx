@@ -5,6 +5,7 @@ import Form from '../../components/Form';
 import Faqs from '../../components/Faqs';
 import FaqCompanySetup from '../../components/FaqData/FaqCompanySetup';
 import HeadingSection from '../../components/HeadingSection';
+import Image from 'next/image';
 
 // const posts = [
 //   {
@@ -41,20 +42,26 @@ const BusinessFormation = () => {
           </div>
           <div className='grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto'>
             <div className='grid grid-cols-2 gap-5'>
-              <img
+              <Image
                 className='object-cover w-full h-56 col-span-2 rounded shadow-lg'
                 src='https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260'
                 alt=''
+                width={500}
+                height={500}
               />
-              <img
+              <Image
                 className='object-cover w-full h-48 rounded shadow-lg'
                 src='https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260'
                 alt=''
+                width={500}
+                height={500}
               />
-              <img
+              <Image
                 className='object-cover w-full h-48 rounded shadow-lg'
                 src='https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260'
                 alt=''
+                width={500}
+                height={500}
               />
             </div>
             <div className='flex flex-col justify-center'>

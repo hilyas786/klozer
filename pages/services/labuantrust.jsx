@@ -51,46 +51,45 @@ const labuantrust = () => {
   const sdn = [
     {
       id: 1,
-      emphasis: '- A target market within Malaysia.',
+      emphasis: 'A target market within Malaysia.',
     },
     {
       id: 2,
       emphasis:
-        '- A paid up capital of RM1 million for 100% foreign-owned or RM400,000 for Joint Venture with a Malaysian.',
+        'A paid up capital of RM1 million for 100% foreign-owned or RM400,000 for Joint Venture with a Malaysian.',
     },
     {
       id: 3,
-      emphasis: '- A minimum of one director and one shareholder.',
+      emphasis: 'A minimum of one director and one shareholder.',
     },
     {
       id: 4,
       emphasis:
-        '- Business and industry licenses are dependant on the business, which  will require local Malaysian participation.',
+        'Business and industry licenses are dependant on the business, which  will require local Malaysian participation.',
     },
     {
       id: 5,
       emphasis:
-        '- Re-domicile is not possible. The business can have shares in a Labuan Company and other forms of investment.',
+        'Re-domicile is not possible. The business can have shares in a Labuan Company and other forms of investment.',
     },
     {
       id: 6,
-      emphasis:
-        '- Corporate tax of 24% for both local and international market.',
+      emphasis: 'Corporate tax of 24% for both local and international market.',
     },
     {
       id: 7,
       emphasis:
-        '- Expatriates employed including the directors will have a 0-28% personal tax rate.',
+        'Expatriates employed including the directors will have a 0-28% personal tax rate.',
     },
     {
       id: 8,
       emphasis:
-        '- Audit reporting is required unless the business is a private exempt company or has less than RM300,000 turnover.',
+        'Audit reporting is required unless the business is a private exempt company or has less than RM300,000 turnover.',
     },
     {
       id: 9,
       emphasis:
-        '- All information including financial accounts are searchable with no permission required.',
+        'All information including financial accounts are searchable with no permission required.',
     },
   ];
   return (
@@ -132,11 +131,14 @@ const labuantrust = () => {
         <div className='absolute bottom-0 h-80 w-full xl:inset-0 xl:h-full'>
           <div className='h-full w-full xl:grid xl:grid-cols-2'>
             <div className='h-full xl:relative xl:col-start-2'>
-              <img
+              <Image
                 className='h-full w-full object-cover opacity-25 xl:absolute xl:inset-0'
                 src='https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100'
                 alt='People working on laptops'
+                width={500}
+                height={500}
               />
+
               <div
                 aria-hidden='true'
                 className='absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r'
@@ -177,7 +179,7 @@ const labuantrust = () => {
             <div className='mb-10'>
               <span className='h-1 w-full bg-indigo-600 absolute rounded-xl mt-5 mb-5' />
             </div>
-            <h2 className='text-3xl font-bold text-white mt-7'>SDN.BHD</h2>
+            <h2 className='text-3xl font-bold text-white mt-7'>Sdn. Bhd.</h2>
             <p className='mt-5 text-lg text-gray-300'>
               The Sdn. Bhd business structure includes the following:
             </p>
