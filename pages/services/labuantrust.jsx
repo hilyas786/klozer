@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
+import InboxIcon from '@heroicons/react/24/outline';
 import IntroSection from '../../components/IntroSection';
-import { InboxIcon } from '@heroicons/react/24/outline';
+
 import labuanfsa from '../../public/img/labuanfsa.png';
 
-const labuantrust = () => {
+export default function labuantrust() {
   const labuan = [
     {
       id: 1,
@@ -206,6 +207,4 @@ const labuantrust = () => {
       </div>
     </>
   );
-};
-
-export default labuantrust;
+}

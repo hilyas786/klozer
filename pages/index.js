@@ -1,16 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
+import { CurrencyDollarIcon } from '@heroicons/react/24/outline';
 import klskyline from '../public/img/klskyline.jpeg';
-import { Button } from '../components/Button';
+import Button from '../components/Button';
 import xeroSilver from '../public/img/xerosilver.png';
 import wt from '../public/img/wt.jpg';
 import xeroDash from '../public/img/dashboard.jpg';
 import munchie from '../public/img/munchiee.jpg';
-import Head from 'next/head';
-import {
-  ChatBubbleOvalLeftEllipsisIcon,
-  CurrencyDollarIcon,
-} from '@heroicons/react/24/outline';
+
 import {
   AccountingIcon,
   BusinessIcon,
@@ -19,7 +17,7 @@ import {
   LabaunIcon,
 } from '../components/Navbar';
 import Hero from '../components/Hero';
-import { ScrollToTop } from '../components/ScrollBackToTop';
+import ScrollToTop from '../components/ScrollBackToTop';
 
 const features = [
   {
@@ -297,11 +295,6 @@ export default function Home() {
                     src={xeroDash}
                     alt='/'
                   />
-                  {/* <img
-                  className='w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none'
-                  src='https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg'
-                  alt='Customer profile user interface'
-                /> */}
                 </div>
               </div>
             </div>

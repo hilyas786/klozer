@@ -1,10 +1,10 @@
 import React from 'react';
+import { useRouter } from 'next/router';
+import NextNProgress from 'nextjs-progressbar';
 import Navbar from '../components/Navbar';
 import '../styles/globals.css';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
-import { useRouter } from 'next/router';
-import NextNProgress from 'nextjs-progressbar';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

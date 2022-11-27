@@ -1,13 +1,11 @@
 import Link from 'next/link';
-
-import React from 'react';
+import { Fragment, React } from 'react';
 import Image from 'next/image';
-import klozerLogo from '../public/img/klozerlogo.png';
-import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Button } from './Button';
+import klozerLogo from '../public/img/klozerlogo.png';
+import Button from './Button';
 
 export function BusinessIcon({ className }) {
   return (

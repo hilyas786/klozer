@@ -1,6 +1,7 @@
+import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
-import FaqHome from './FaqData/FaqHome';
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }

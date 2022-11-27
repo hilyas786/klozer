@@ -1,7 +1,7 @@
-import { Button } from './Button';
-
 import React from 'react';
-const IntroSection = ({
+import Button from './Button';
+
+export default function IntroSection({
   smallHeading,
   mainHeading,
   paragraph,
@@ -9,7 +9,7 @@ const IntroSection = ({
   Title2,
   Title3,
   showButton,
-}) => {
+}) {
   return (
     <>
       <div className='bg-gray-100'>
@@ -72,5 +72,4 @@ const IntroSection = ({
       </div>
     </>
   );
-};
-export default IntroSection;
+}

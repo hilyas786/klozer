@@ -1,6 +1,6 @@
 import React from 'react';
 import IntroSection from '../components/IntroSection';
-import { Button } from '../components/Button';
+import Button from '../components/Button';
 
 const posts = [
   {
@@ -17,7 +17,7 @@ const posts = [
   },
 ];
 
-const careers = () => {
+export default function careers() {
   return (
     <>
       <IntroSection
@@ -73,6 +73,4 @@ const careers = () => {
       </div>
     </>
   );
-};
-
-export default careers;
+}

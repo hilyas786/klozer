@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Stats = () => {
+export default function Stats() {
   return (
     <div className='bg-gray-100 pt-12 sm:pt-16'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -50,6 +50,4 @@ const Stats = () => {
       </div>
     </div>
   );
-};
-
-export default Stats;
+}

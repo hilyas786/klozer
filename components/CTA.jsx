@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from './Button';
+import Button from './Button';
 
-const CTA = () => {
+export default function CTA() {
   return (
     <div className='bg-gray-100 '>
       <div className='mx-auto max-w-7xl py-5 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-10 lg:px-8'>
@@ -17,6 +17,4 @@ const CTA = () => {
       </div>
     </div>
   );
-};
-
-export default CTA;
+}

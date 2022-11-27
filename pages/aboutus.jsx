@@ -1,17 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import Hero from '../components/Hero';
+import { SparklesIcon, BriefcaseIcon } from '@heroicons/react/24/outline';
 import IntroSection from '../components/IntroSection';
 import personaltouch from '../public/img/personaltouch.jpg';
 import wt from '../public/img/wt.jpg';
 import working from '../public/img/working.jpg';
-import {
-  InboxIcon,
-  SparklesIcon,
-  BriefcaseIcon,
-} from '@heroicons/react/24/outline';
-import { Button } from '../components/Button';
-import { UsersIcon } from '@heroicons/react/24/outline';
+import Button from '../components/Button';
 
 const whyus = [
   {

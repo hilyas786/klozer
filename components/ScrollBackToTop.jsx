@@ -1,7 +1,7 @@
 import { useEffect, useState, React } from 'react';
 import { BiArrowFromBottom } from 'react-icons/bi';
 
-export const ScrollToTop = () => {
+export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -41,4 +41,4 @@ export const ScrollToTop = () => {
       </button>
     </div>
   );
-};
+}
