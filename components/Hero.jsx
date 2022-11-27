@@ -11,7 +11,9 @@ const Hero = ({ src, heading1, heading2, subtext, children, className }) => {
         <div className='relative shadow-xl sm:overflow-hidden sm:rounded-2xl'>
           <div className='absolute inset-0'>
             <Image
-              priority
+              width={1000}
+              height={1000}
+              priority={true}
               className='h-full w-full object-cover'
               src={src}
               alt='/'

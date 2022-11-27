@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import InboxIcon from '@heroicons/react/24/outline';
 import IntroSection from '../../components/IntroSection';
 
 import labuanfsa from '../../public/img/labuanfsa.png';
@@ -10,7 +9,6 @@ export default function labuantrust() {
     {
       id: 1,
       emphasis: 'A paid up capital of USD1 for 100% foreign-owned.',
-      icon: InboxIcon,
     },
     {
       id: 2,

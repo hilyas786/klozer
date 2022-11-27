@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import NextNProgress from 'nextjs-progressbar';
 import Navbar from '../components/Navbar';
@@ -6,9 +6,21 @@ import '../styles/globals.css';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 
+function usePrevious(value) {
+  let ref = useRef();
+
+  useEffect(() => {
+    ref.current = value;
+  }, [value]);
+
+  return ref.current;
+}
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const showCTA = router.pathname === '/contact' ? false : true;
+
+  let previousPathname = usePrevious(router.pathname);
   return (
     <>
       <NextNProgress
@@ -19,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         startPosition={0.3}
       />
       <Navbar />
-      <Component {...pageProps} />
+      <Component previousPathname={previousPathname} {...pageProps} />
       {showCTA && <CTA />}
       <Footer />
     </>
