@@ -28,16 +28,16 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className='fixed bottom-10 right-5'>
+    <div className="fixed bottom-10 right-5">
       <button
-        type='button'
+        type="button"
         onClick={scrollToTop}
         className={
           (isVisible ? 'opacity-100' : 'opacity-0',
           'bg-white inline-flex items-center rounded-full p-2 text-purple-900 shadow-3xl  ')
         }
       >
-        <BiArrowFromBottom className='h-8 w-8' aria-hidden='true' />
+        <BiArrowFromBottom className="h-8 w-8" aria-hidden="true" />
       </button>
     </div>
   );

@@ -19,18 +19,19 @@ function usePrevious(value) {
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const showCTA = router.pathname === '/contact' ? false : true;
-
+  const showLogin = router.pathname === '/login-example' ? false : true;
   let previousPathname = usePrevious(router.pathname);
+
   return (
     <>
       <NextNProgress
-        color='#3949ab'
+        color="#3949ab"
         height={8}
         showOnShallow={true}
         options={{ showSpinner: true }}
         startPosition={0.3}
       />
-      <Navbar />
+      {showLogin && <Navbar />}
       <Component previousPathname={previousPathname} {...pageProps} />
       {showCTA && <CTA />}
       <Footer />

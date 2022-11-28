@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "next/core-web-vitals", // Needed to avoid warning in next.js build: 'The Next.js plugin was not detected in your ESLint configuration'
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": "true",
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
