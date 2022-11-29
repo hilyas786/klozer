@@ -1,6 +1,7 @@
 import { LockClosedIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import klozerLogo from '../public/img/klozerlogo.png';
+
 export default function Example() {
   return (
     <>

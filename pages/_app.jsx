@@ -1,3 +1,4 @@
+/* eslint-disable no-unneeded-ternary */
 import { React, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import NextNProgress from 'nextjs-progressbar';
@@ -7,6 +8,7 @@ import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 
 function usePrevious(value) {
+  // eslint-disable-next-line prefer-const
   let ref = useRef();
 
   useEffect(() => {
@@ -20,6 +22,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const showCTA = router.pathname === '/contact' ? false : true;
   const showLogin = router.pathname === '/login-example' ? false : true;
+  // eslint-disable-next-line prefer-const
   let previousPathname = usePrevious(router.pathname);
 
   return (
